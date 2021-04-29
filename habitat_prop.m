@@ -7,10 +7,6 @@ kernel_sz = 400;
 for im_ind = 1:6
     Image = imread(im_files{1,im_ind});
     ImageGS = Image(:,:,1) .* (299/1000) + Image(:,:,2) .* (587/1000) + Image(:,:,3) .* (114/1000);
-%     ImageGS = im2double(ImageGS); 
-    
-%     meanlum(im_ind,1) = mean2(ImageGS);
-%     stdlum(im_ind,1) = std2(ImageGS);
     
 %%lumMatch: outputImage = inputImage - np.mean2(inputImage) / np.std2(inputImage) * newSTD + newMEAN
     newMEAN = 140; %mean of meanlum
@@ -48,9 +44,9 @@ mean_slope(:,1) = mean(slope2avg,2);
 % im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/WNxHabitat';
 % im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/habitat_patches_6500x2400';
 % im_folder = 'C:/Users/preinstalled/PycharmProjects/pythonProject/fish_images/olmstedi/habitat_e_olmstedi_PatuxentRiver_sand/Habitat_patches_6500x2400';
-im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/styled_detouré';
-% im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/original_detouré/CAER';
-% im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/original_detouré';
+im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/styled_detourÃ©';
+% im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/original_detourÃ©/CAER';
+% im_folder = 'C:/Users/preinstalled/Documents/PostDoc_Doc/StyleTransfer/results_solo_pix/original_detourÃ©';
 addpath(im_folder);
 im_files = dir (im_folder);
 im_files = struct2cell(im_files(3:end));
@@ -65,11 +61,5 @@ for im_ind = 1:length(im_files)
     meanlum(im_ind,1) = mean2(Image);
     stdlum(im_ind,1) = std2(Image);
     
-%     newMEAN = 129; %mean of meanlum
-%     newSTD  = 43; %mean of stdlum
-%     lumMatch = ((Image - mean2(Image) ) / std2(Image)) * newSTD + newMEAN;
-%     
-%     meanlum(im_ind,4) = mean2(lumMatch);
-%     stdlum(im_ind,4) = std2(lumMatch);
     matofI(im_ind,:) = {im_files{1,im_ind} meanlum(im_ind,1) stdlum(im_ind,1)};
 end
