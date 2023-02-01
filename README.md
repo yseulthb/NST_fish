@@ -16,7 +16,7 @@ FISH IMAGES:<br>
 	- Notebook: Fish_ImageProcessing.ipynb
 
 FEEDING THE BEAST (NST algorithm)<br>
-5. Choose a couple of images from various habitat types or fish individuals and give them to the Style Transfer algorithm.
+5. Choose a couple of images from various habitat types or fish individuals and give them to the Style Transfer algorithm.<br>
 	- Notebook: neural_style_preserve_color.ipynb (to run on colab)
 
 6. Check the average pixel intensity value of each habitat image to match adequately a gravel vs sand pair.
