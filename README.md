@@ -15,11 +15,11 @@ FISH IMAGES:<br>
 4. Fish images were originally cropped, but later detoured using GIMP and directly given as an input to the NST algorithm. In case cropping code is useful to anyone, here it is:
 	- Notebook: Fish_ImageProcessing.ipynb
 
-FEEDING THE BEAST (NST algorithm)
+FEEDING THE BEAST (NST algorithm)<br>
 5. Choose a couple of images from various habitat types or fish individuals and give them to the Style Transfer algorithm:
 	- Notebook: neural_style_preserve_color.ipynb (to run on colab)
 
 6. Check the average pixel intensity value of each habitat image to match adequately a gravel vs sand pair.
-	- matlab code habitat_prop.m
+	- Matlab code habitat_prop.m
 
 7. Fish animations were later created with the Blender animation software. Fish were given a path to follow and a video background to render a more naturalistic visual stimulation.  	
