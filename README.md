@@ -1,16 +1,17 @@
 # NST_fish
 This repo contains the procedure and scripts used to create "styled" fish images using the Neural Style Transfer (NST) algorithm with the colour preservation implementation (Gatys et al, 2016). 
+This serves two purposes: code sharing as favoured by open science practice and archive to enable future experiments in the lab using the same tool when I am no longer there. 
 
 Raw images are not provided given their size but the script is provided for transparency purposes. 
 
-IMAGE PROCESSING BEFORE FEEDING THE STYLE TRANSFER ALGORITHM
-HABITAT IMAGES:
+IMAGE PROCESSING BEFORE FEEDING THE STYLE TRANSFER ALGORITHM <br>
+HABITAT IMAGES: <br>
 1. Download RAW data from Sam's drive (Images) into a RAW folder = .CR2 format
 2. Execute the Raw2tiff.py script to transform images in a tiff format while performing white balance and save them into a whitebalance folder
 3. Crop the images to get a 6500x 2400 patch 
 	- Notebook: Habitat_ImageProcessing.ipynb
 
-FISH IMAGES:
+FISH IMAGES:<br>
 4. Fish images were originally cropped, but later detoured using GIMP and directly given as an input to the NST algorithm. In case cropping code is useful to anyone, here it is:
 	- Notebook: Fish_ImageProcessing.ipynb
 
