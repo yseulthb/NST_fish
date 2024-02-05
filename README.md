@@ -6,7 +6,7 @@ Raw images are not provided given their size but the script is provided for tran
 
 IMAGE PROCESSING BEFORE FEEDING THE STYLE TRANSFER ALGORITHM <br>
 Habitat images: <br>
-1. Download RAW data from Sam's drive (Images) into a RAW folder = .CR2 format
+1. Download RAW data (.CR2 format)
 2. Execute the Raw2tiff.py script to transform images in a tiff format while performing white balance and save them into a whitebalance folder
 3. Crop the images to get a 6500x 2400 patch 
 	- Notebook: Habitat_ImageProcessing.ipynb
