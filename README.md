@@ -16,7 +16,7 @@ Fish images:<br>
 4. Fish images were originally cropped, but later detoured using GIMP and directly given as an input to the NST algorithm. In case cropping code is useful to anyone, here it is
 	- Notebook: Fish_ImageProcessing.ipynb
 
-FEEDING THE BEAST (NST algorithm)<br>
+FEEDING THE NST ALGORITHM <br>
 
 5. Choose a couple of images from various habitat types or fish individuals and give them to the Style Transfer algorithm.
 	- Notebook: neural_style_preserve_color.ipynb (to run on colab)
