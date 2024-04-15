@@ -7,5 +7,5 @@ Choose a couple of images from the Raw Images folder (one habitat and one fish i
 	- Notebook: neural_style_preserve_color.ipynb (to run on Google Colab: https://colab.research.google.com/)
 
 
-- Fish animations: <be>
+- Fish animations: <br>
 Fish animations were later created with the Blender animation software. Fish were given a path to follow and a video background to render a more naturalistic visual stimulation.  	
