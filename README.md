@@ -1,8 +1,8 @@
 # NST_fish
 This repository contains the procedure and scripts used to create "styled" fish images using the Neural Style Transfer (NST) algorithm with the colour preservation implementation (Gatys et al, 2016). 
+All images and scripts required to reproduce the stimuli used in Héjja-Brichard et al. (bioRxiv) have been uploaded and annotated. 
 
-
-FEEDING THE NST ALGORITHM <br>
+Neural Style Transfer algorithm <br>
 
 1. Choose a couple of images from the Raw Images folder (one habitat and one fish image) and give them to the Style Transfer algorithm.
 	- Notebook: neural_style_preserve_color.ipynb (to run on Google Colab: https://colab.research.google.com/)
