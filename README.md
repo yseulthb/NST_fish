@@ -1,5 +1,5 @@
 # NST_fish
-This repo contains the procedure and scripts used to create "styled" fish images using the Neural Style Transfer (NST) algorithm with the colour preservation implementation (Gatys et al, 2016). 
+This repository contains the procedure and scripts used to create "styled" fish images using the Neural Style Transfer (NST) algorithm with the colour preservation implementation (Gatys et al, 2016). 
 
 
 FEEDING THE NST ALGORITHM <br>
