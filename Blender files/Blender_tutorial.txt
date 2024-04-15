@@ -1,0 +1,58 @@
+BLENDER - IMPORTANT TUTORIALS
+
+Motion tracking 101: https://www.youtube.com/watch?v=WLSGG7sDEac
+
+Under water scene tutorial (import the fish: 16'): https://www.youtube.com/watch?v=D46rIXGqqtk
+
+Convert 2D image to 3D object: https://www.youtube.com/watch?v=H-J_-3JLXpE&t=119s
+
+Create path for any object to follow: https://www.youtube.com/watch?v=G6NdQGySZhU
+
+Export video with transparent background: https://www.youtube.com/watch?v=4emIy6vevcI
+
+Animate fish fast tutorial (mesh is distorted!): https://www.youtube.com/watch?v=58lc8sLpJzY
+
+
+-- PROCEDURE
+
+
+
+1. Open Blender
+>> If you have it, open the Blender file in Blender "MotionTrackFish_original (another copy).blend"
+and skip steps 2 and 3. 
+
+2. Import the track file (.fdx), this should also bring the original video from which the track was extracted
+3. In the Movie clip editor mode, import a second video (the background video) to use it as a reference (it won't be inclduded in the rendering). For faster reading of the video, you can sequence it first (see Motion Tracking 101 tutorial above for the procedure)
+
+4. In the 3D viewpoint mode, click on Add > Image > Image as planes (the add-on for that 3rd option needs to be activated > settings) and select the styled fish image you want to animate
+5. Select the fish by clicking on it and modify its rotation coordinates (in the Transform menu) to match the coordinates of the background video (should be something lke X=63.6; Y=0; Z=46.7) and scale it down to a fish size
+6. Add a constraint to the fish: Follow Track > untick the Active clip box to select the original movie clip from which the tracking is coming (rather than the background video, should be test_seq); object = camera; track = track. Tick the apply the f-curve option.
+7. Take the other model fish and copy the f path to the newly imported fish (be on frame 1!). This will modify the rotation of the fish. Put it back to X=63.6; Y=0; Z=46.7 and left click select "replace keyframes"
+8. Object > Apply > Rotation. this should put the value of rotation to 0 and make the current orientation the default one. 
+! Don't forget to left clik on 'replace key frame' and to be on frame 1 when you copy paste the new track. this should apply the new rotation to the whole path.
+
+Sun light strength: 1.35 for boulder fish and unstyled fish; O.7 for sand fish 
+
+
+-------------------------------------------------------------------------------------------- 
+>>> Steps below are not necessary but can be useful if you're interested in adding depth to the fish (! It might modify natural statistics!) or if you want to add a separate animation for the fins.
+
+[When selecting the track, the fish rotation will be identical to the track one. We don't want that. Just reorient the fish in the right manner (should be something like: x=-50; Y=-51; Z=-34)]
+7. Edit mode > Knife: contour of the fish + of each fin.
+8. Face Select: select the background parts and delete > Faces
+9. Select all the fins together (shift key to multiselect) > Separate > Selection
+10. Back to Object mode: the fish is now made of 2 objects
+11. For each fish object, go to constraint and click 'constraint f curve' to allow the copying of the body movement from one fish to the other
+12. Import another fdx file (something called movie original.fdx), click on on of the imported fish objects and copy the animation.
+13. Paste it to both fish objects (the non imported ones). 
+---------------------------------------------------------------------------------------------
+
+14. Delete the imported fish object to only render the fish of interest. 
+14. Properties > Render properties > Film: tick the Transparent option, to enable the transparent background (otherwise it's gray)
+15. Rendering tab > Output: File format = FFmpeg video; container: quicktime; video codec: QT rle/QT animation. This will save the rendered animation as a mov file, keeping the background transparent. 
+16. Properties > Output: dont forget to change the name of the animation video or it'll erase the previous one. And you might not want to do that!
+17. Render > Render animation: this is quite long. Go have a break or something!
+18. When the render has reached the final frame (1250), you can close the render window.
+Well done! Your animation has been rendered and is now saved as a video file (.mov)!
+
+
