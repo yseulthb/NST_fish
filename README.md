@@ -4,7 +4,7 @@ All images and scripts required to reproduce the stimuli used in Héjja-Brichard
 
 - Neural Style Transfer algorithm <br>
 Choose a couple of images from the [Raw Images] folder (one habitat and one fish image) and give them to the NST script.
-	- Notebook: neural_style_preserve_color.ipynb (to run on Google Colab: https://colab.research.google.com/)
+	- Notebook: NeuralStyleTransferAlgorithm.ipynb (to run on Google Colab: https://colab.research.google.com/)
 
 
 - Fish animations: <br>
