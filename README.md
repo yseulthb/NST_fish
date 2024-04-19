@@ -3,7 +3,7 @@ This repository contains the procedure and scripts used to create "styled" fish 
 All images and scripts required to reproduce the stimuli used in Héjja-Brichard et al. [(bioRxiv)](https://doi.org/10.1101/2023.03.13.532060) have been uploaded and annotated. 
 
 - Neural Style Transfer algorithm <br>
-Choose a couple of images from the [Raw Images] folder (one habitat and one fish image) and give them to the NST script.
+Choose a couple of images from the [Raw Images] folder (one habitat and one fish image) and give them as input to the NST script.
 	- Notebook: NeuralStyleTransferAlgorithm.ipynb (to run on Google Colab: https://colab.research.google.com/)
 
 
